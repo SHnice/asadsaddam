@@ -8,6 +8,7 @@ const Gallery = () => {
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     padding: '20px',
+    marginTop: '10px',
   };
 
   const imageStyles = {
@@ -49,7 +50,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <h1 style={{ paddingTop: '100px' }}>Photo Gallery</h1>
+      <h1 style={{ paddingTop: '100px', textAlign:'center' }}>Photo Gallery</h1>
       <div style={galleryStyles}>
         {images.map((imageUrl, index) => (
           <img
